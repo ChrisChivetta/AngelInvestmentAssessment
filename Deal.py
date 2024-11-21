@@ -170,65 +170,7 @@ def evaluate_deal(data, config=None):
     deal.calculate_metrics()
     deal.print_metrics()
 
-# Test cases
-test_cases = [
-    {
-        "company_name": "Achieve Clinics",
-        "industry": "Biotechnology",
-        "ask": 500000,
-        "valuation_cap": 5000000,
-        "security_type": "Convertible Note",
-        "discount_rate": 0.20,
-        "interest": 0.06,
-        "yearly_revenue": [18500, 775000, 6325000],
-        "monthly_burn": 1000,
-        "current_cash": 74672,
-        "months_of_cash": 75,
-        "previous_raise": 98668
-    },
-    {
-        "company_name": "Kids Care Finder",
-        "industry": "Consumer Services",
-        "ask": 1000000,
-        "valuation_cap": 7000000,
-        "security_type": "SAFE",
-        "discount_rate": 0.20,
-        "interest": 0.00,
-        "yearly_revenue": [10000000, 20000000],
-        "monthly_burn": 30000,
-        "current_cash": 55000,
-        "months_of_cash": 2,
-        "previous_raise": 400000
-    },
-    {
-        "company_name": "Fiscali, Inc.",
-        "industry": "Sports",
-        "ask": 600000,
-        "valuation_cap": 6000000,
-        "security_type": "Preferred Equity",
-        "discount_rate": 0.00,
-        "interest": 0.00,
-        "yearly_revenue": [39465480, 81298889],
-        "monthly_burn": 0,
-        "current_cash": 0,
-        "months_of_cash": None,
-        "previous_raise": None
-    },
-    {
-        "company_name": "Viatik",
-        "industry": "Medical Devices and Equipment",
-        "ask": 6000000,
-        "valuation_cap": 30000000,
-        "security_type": "Common Equity",
-        "discount_rate": 0.00,
-        "interest": 0.00,
-        "yearly_revenue": [3318572, 29120768],
-        "monthly_burn": 800,
-        "current_cash": 10000,
-        "months_of_cash": 13,
-        "previous_raise": None
-    }
-]
+
 
 # Run the test cases with default configuration
 for case in test_cases:
