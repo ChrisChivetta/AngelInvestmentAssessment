@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "https://musical-space-telegram-vgqrjrq5g4pcx45v-8000.app.github.dev";
+const API_BASE_URL = "https://laughing-engine-x9vpgpv4pppcpjrr-8000.app.github.dev";
 
 // Utility function to handle axios requests
 const axiosRequest = async (method, url, data = null, headers = {}) => {
