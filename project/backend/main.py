@@ -124,12 +124,14 @@ class Deal:
             self.valuation_assessment = "Favorable Valuation"
 
         # Runway Assessment
-        if self.months_of_cash is None or self.months_of_cash == 0:
+        if self.monthly_burn == 0:
             self.runway_assessment = "Unknown"
-        elif self.months_of_cash > self.config["modeled_cash_months"]:
-            self.runway_assessment = "Adequate"
         else:
-            self.runway_assessment = "Inadequate"
+            self.months_of_cash = self.current_cash / self.monthly_burn
+            if self.months_of_cash > self.config["modeled_cash_months"]:
+                self.runway_assessment = "Adequate"
+            else:
+                self.runway_assessment = "Inadequate"
 
         return {
             "growth_rates": self.growth_rates,
